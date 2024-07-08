@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing : border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+/* ===== Header CSS ===== */
+header { 
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin: 0;
+    position: sticky;
+
+    background: #33333381;
+}
+
+.nameplate { 
+    font-size : 1.5rem;
+    height: 100%;
+    color: white;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+
+    display : flex;
+    align-items: center;
+
+}
+
+nav ul { 
+    display : flex;
+    padding: 0;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style: none;
+    
+}
+
+nav ul li{
+    list-style-type : none;
+
+    padding: 8px;
+    border-radius : 10px;
+
+    /* position : relative; */
+}
+
+nav a{
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+nav ul li:hover, nav ul li:active{
+    background-color : #5b91ca ;
+    font-style: bold; 
+    transition: 0.6s;
+} 
+
+/* ===== Main CSS ===== */
+/* ===== Banner CSS ===== */
+.banner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index : -10;
+}
+
+.banner {
+    background-color: #5b91ca;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center; 
+
+    opacity:0;
+    transition : 500ms opacity ease-in-out;
+}
+
+.img1 {
+    background-image: url(assets/BannerBackground.png);
+}
+.img2{
+    background-image: url(assets/BannerBackground2.png);
+}
+.img3{
+    background-image: url(assets/BannerBackground3.png);
+}
+.img4{
+    background-image: url(assets/BannerBackground4.png);
+}
