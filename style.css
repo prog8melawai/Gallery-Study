@@ -91,6 +91,7 @@ nav ul li:hover, nav ul li:active{
     background-color: #5b91ca;
     background-size: cover;
     background-position: center center;
+    background-position: 50% 50%;
     padding: 0;
     margin: 0;
 
