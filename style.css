@@ -11,6 +11,12 @@ body {
     text-align: center;
 }
 
+main {
+    overflow: auto;
+    display : flex;
+    flex-direction : column; 
+}
+
 /* ===== Header CSS ===== */
 header { 
     display : flex;
@@ -85,18 +91,57 @@ nav ul li:hover, nav ul li:active{
     background-color: #5b91ca;
     background-size: cover;
     background-position: center center;
-    height: 100%;
     padding: 0;
     margin: 0;
 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
     display: flex;
-    flex-direction : column;
+    flex-direction : row;
     align-items: center;
     justify-content: center; 
 
     opacity:0;
     transition : 500ms opacity ease-in-out;
 }
+
+.active {
+    opacity : 1;
+}
+
+.btn { 
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 12px;
+    margin-top: -50px;
+    color: white;
+    opacity: 0.66;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right : 0;
+}
+
+.prev:hover, .next:hover {
+    background-color : #333333;
+}
+
 
 .img1 {
     background-image: url(assets/BannerBackground.png);
@@ -110,3 +155,4 @@ nav ul li:hover, nav ul li:active{
 .img4{
     background-image: url(assets/BannerBackground4.png);
 }
+
